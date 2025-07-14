@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-ExtraBoldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-BoldIt.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-SemiBoldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-MediumIt.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-RegularIt.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-BookIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("/fonts/cygre_default/Cygre-LightIt.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+.cygre-font {
+  font-family: "Cygre", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--foreground);
+  color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
