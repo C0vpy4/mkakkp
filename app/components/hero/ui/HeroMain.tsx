@@ -5,11 +5,8 @@ import HeroImage from "./HeroImage";
 
 const HeroMain = () => {
   return (
-    <div className="flex flex-nowrap justify-center sm:justify-between md:justify-between relative ">
-      <div
-        className=" justify-between sm:justify-start md:justify-start lg:justify-start 
-      h-[500px] flex flex-col gap-10 md:gap-4 w-[100%] sm:w-[50%] md:w-[50%] lg:w-[50%]"
-      >
+    <div className="flex flex-col lg:flex-row justify-center lg:justify-between relative px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+      <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-4 w-full lg:w-1/2 h-auto lg:h-[500px] justify-center lg:justify-start z-10">
         <HeroTitle />
         <HeroButtons />
       </div>

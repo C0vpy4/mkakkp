@@ -14,11 +14,13 @@ export const Sections: React.FC<SectionsProps> = ({
   textColor = "text-white",
 }) => {
   return (
-    <div className={`z-50 ${bgColor} ${textColor} p-10 `}>
-      <div className="justify-start text-[54px] sm:text-5xl md:text-6xl lg:text-[84px] font-normal leading-[122.50px] tracking-wide">
+    <div
+      className={`z-50 ${bgColor} ${textColor} p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16`}
+    >
+      <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[84px] font-normal leading-tight sm:leading-normal md:leading-relaxed lg:leading-[122.50px] tracking-wide">
         {title}
       </div>
-      <div className="ml-[50%] justify-start text-[18px] sm:text-[18px] md:text-[20px] lg:text-[14px] font-normal">
+      <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 lg:ml-[50%] text-base sm:text-lg md:text-xl lg:text-sm xl:text-base font-normal leading-relaxed max-w-full lg:max-w-[50%]">
         {description}
       </div>
     </div>

@@ -1,9 +1,10 @@
-import { FormSection, Hero, Salary, Sections } from "./components";
+import { CardSection, FormSection, Hero, Salary, Sections } from "./components";
+import { Footer } from "./shared";
 
 export default function Home() {
   return (
-    <div className="text-stone-900 px-2 sm:px-10 md:px-10 lg:px-10 uppercase ">
-      <div className="mt-[50px] z-10">
+    <div className="text-stone-900 px-2 sm:px-10 md:px-10 lg:px-10 uppercase min-h-screen w-full">
+      <div className="mt-[50px] z-10 w-full">
         <Hero />
       </div>
       <div className="z-50 absolute mt-20 bg-blue-600 left-0">
@@ -45,6 +46,15 @@ export default function Home() {
         <div className="bg-white p-10 py-20">
           <FormSection />
         </div>
+        <div className="bg-white w-full">
+          <CardSection />
+        </div>
+        <div className="bg-stone-900 text-white px-10 pt-20">
+          <Footer />
+        </div>
+        {/* <div className="bg-stone-900 absolute text-nowrap overflow-x-hidden text-center justify-center -left-20 text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-normal font-['Cygre'] uppercase leading-tight sm:leading-normal md:leading-relaxed lg:leading-[98px] tracking-[2.88px]">
+          Кятова, Клячковский и Партнёры
+        </div> */}
       </div>
     </div>
   );
